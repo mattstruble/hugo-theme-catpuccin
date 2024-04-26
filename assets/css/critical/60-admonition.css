@@ -1,0 +1,91 @@
+/* Admonition container */
+.admonition {
+  position: relative;
+  margin: 1rem 0;
+  padding: 0 0.75rem;
+  border-left: .25rem solid;
+  overflow: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.admonition .admonition-title {
+  font-weight: bold;
+  margin: 0 -0.75rem;
+  padding: 0.25rem 1.8rem;
+  /* border-bottom: 1px solid; */
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.admonition .admonition-content {
+  padding: 0.5rem 0;
+}
+
+.admonition i.icon {
+  font-size: 0.85rem;
+  position: absolute;
+  top: 0.6rem;
+  left: 0.4rem;
+}
+
+.admonition i.details-icon {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.3rem;
+}
+
+.admonition:last-child {
+  margin-bottom: 0.75rem;
+}
+
+/* Admonition types */
+.admonition.info {
+  --color: var(--blue);
+  background-color: color-mix( in srgb, var(--color) 10%, transparent);
+  border-color: var(--color);
+}
+
+.admonition.warning {
+  --color: var(--yellow);
+  background-color: color-mix( in srgb, var(--color) 10%, transparent);
+  border-color: var(--color);
+}
+
+.admonition.error {
+  --color: var(--red);
+  background-color: color-mix( in srgb, var(--color) 10%, transparent);
+  border-color: var(--color);
+}
+
+.admonition.success {
+  --color: var(--green);
+  background-color: color-mix( in srgb, var(--color) 10%, transparent);
+  border-color: var(--color);
+}
+
+/* Admonition title */
+.admonition.info .admonition-title {
+  border-bottom-color: var(--color);
+  background-color: color-mix( in srgb, var(--color) 30%, transparent);
+}
+
+.admonition.warning .admonition-title {
+  --color: var(--yellow);
+  border-bottom-color: var(--color);
+  background-color: color-mix( in srgb, var(--color) 30%, transparent);
+}
+
+.admonition.error .admonition-title {
+  --color: var(--red);
+  border-bottom-color: var(--color);
+  background-color: color-mix( in srgb, var(--color) 30%, transparent);
+}
+
+.admonition.success .admonition-title {
+  --color: var(--green);
+  border-bottom-color: var(--color);
+  background-color: color-mix( in srgb, var(--color) 30%, transparent);
+}
