@@ -1,6 +1,7 @@
 ---
 title: "Shortcodes"
 date: "2024-04-26"
+description: "Examples of available shortcodes"
 toc: true
 ---
 
