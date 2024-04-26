@@ -6,13 +6,19 @@ toc: true
 
 ## Admonition
 
+{{< admonition type=note >}} A **note** banner {{< /admonition >}}
+
 {{< admonition type="info" >}} An **info** banner {{< /admonition >}}
+
+{{< admonition type="tip" >}} A **tip** banner {{< /admonition >}}
+
+{{< admonition type="success" >}} A **success** banner {{< /admonition >}}
 
 {{< admonition type="warning" >}} A **warning** banner {{< /admonition >}}
 
 {{< admonition type="error" >}} An **error** banner {{< /admonition >}}
 
-{{< admonition type="success" >}} A **success** banner {{< /admonition >}}
+{{< admonition type="example" >}} An **example** banner {{< /admonition >}}
 
 The `admonition` shortcode has the following named parameters:
 
