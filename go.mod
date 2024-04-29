@@ -1,4 +1,4 @@
-module github.com/schnerring/hugo-theme-gruvbox
+module github.com/mattstruble/hugo-theme-catpuccin
 
 go 1.22.1
 

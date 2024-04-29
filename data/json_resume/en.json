@@ -13,8 +13,8 @@
     "profiles": [
       {
         "network": "GitHub",
-        "username": "hugo-theme-gruvbox",
-        "url": "https://github.com/schnerring/hugo-theme-gruvbox"
+        "username": "hugo-theme-catpuccin",
+        "url": "https://github.com/mattstruble/hugo-theme-catpuccin"
       },
       {
         "network": "GitHub",

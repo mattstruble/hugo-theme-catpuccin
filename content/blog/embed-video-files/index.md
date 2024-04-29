@@ -7,8 +7,10 @@ socialShare: true
 toc: false
 ---
 
-Use the [video shortcode](https://github.com/schnerring/hugo-theme-gruvbox/blob/main/layouts/shortcodes/video.html)
-to embed your video files from [Hugo Page Resources](https://gohugo.io/content-management/page-resources/).
+Use the
+[video shortcode](https://github.com/mattstruble/hugo-theme-catpuccin/blob/main/layouts/shortcodes/video.html)
+to embed your video files from
+[Hugo Page Resources](https://gohugo.io/content-management/page-resources/).
 
 {{< video src="my-video" autoplay="true" controls="false" loop="true" >}}
 

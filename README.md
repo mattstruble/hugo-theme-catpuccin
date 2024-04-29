@@ -1,12 +1,14 @@
-# Gruvbox Hugo Theme
+# Catpuccin Hugo Theme
 
 A retro-looking [Hugo](https://gohugo.io/) theme inspired by
-[gruvbox](https://github.com/morhetz/gruvbox) to build secure, fast, and
+[catpuccin](https://github.com/catppuccin/catppuccin) to build secure, fast, and
 SEO-ready websites.
 
 This theme is easily customizable with features that any coder loves.
 
-I took a lot of inspiration from the
+This theme is entirely based off
+[hugo-theme-gruvbox](https://github.com/schnerring/hugo-theme-gruvbox) which
+took a lot of inspiration from
 [Hello Friend](https://github.com/panr/hugo-theme-hello-friend) and
 [Doks](https://github.com/h-enk/doks) Hugo themes.
 
@@ -17,7 +19,7 @@ I took a lot of inspiration from the
 ## DISCLAIMER: Project Status
 
 This theme is still in early development.
-[Check out the issues](https://github.com/schnerring/hugo-theme-gruvbox/issues)
+[Check out the issues](https://github.com/mattstruble/hugo-theme-catpuccin/issues)
 to see what's still missing.
 
 ## Highlights
@@ -27,7 +29,6 @@ to see what's still missing.
 - Display your CV using structured [JSON Resume](https://jsonresume.org/) data
 - [Integrated image optimization with next-gen image formats and lazy loading](#image-optimization)
 - Dark mode that also changes Prism themes
-- [Dynamic color choices from the Gruvbox color palette](#colors)
 - [Extensible to make it suit your needs](#extensibility)
 - Responsive, mobile-first design
 - Beautiful SVG icons with [Tabler Icons](https://tabler-icons.io/)
@@ -74,7 +75,7 @@ Add the following to the `config.toml` file:
 # See: https://github.com/schnerring/hugo-theme-gruvbox/issues/16
 [module]
   [[module.imports]]
-    path = "github.com/schnerring/hugo-theme-gruvbox"
+    path = "github.com/mattstruble/hugo-theme-catpuccin"
   [[module.imports]]
     path = "github.com/schnerring/hugo-mod-json-resume"
     [[module.imports.mounts]]
@@ -159,15 +160,9 @@ npm install
 
 Two options are available to configure the theme colors:
 
-- `defaultTheme`: `dark` or `light` (defaults to `light`)  
-  Default theme color for when a user visits the site for the first time. OS or
-  user preference override this setting.
-  [See this comment for more details.](https://github.com/schnerring/hugo-theme-gruvbox/issues/34#issuecomment-1235870375)
-- `themeColor`: `gray`, `red`, `green`, `yellow`, `blue`, `purple`, `aqua`, or
-  `orange` (defaults to `blue`)  
-  Theme color for things such as links, headings etc.
-- `themeContrast`: `soft`, `medium`, or `hard` (defaults to `medium`)  
-  Theme background color
+- `defaultTheme`: `dark` or `light` (defaults to `light`) Default theme color
+  for when a user visits the site for the first time. OS or user preference
+  override this setting.
 
 ## Prism
 
@@ -286,7 +281,7 @@ cover:
 ## Embed Video Files
 
 Use the
-[video shortcode](https://github.com/schnerring/hugo-theme-gruvbox/blob/main/layouts/shortcodes/video.html)
+[video shortcode](https://github.com/mattstruble/hugo-theme-catpuccin/blob/main/layouts/shortcodes/video.html)
 to embed your video files from
 [Page Resources](https://gohugo.io/content-management/page-resources/).
 
@@ -416,14 +411,14 @@ directory.
 You can extend the theme by overriding the following partials in the
 `layouts/partials` directory which by default are empty placeholder files:
 
-- [`head/head_start.html`](./layouts/partials/head_start.html)  
-  Custom HTML at the start of `<head>`
-- [`head/head_end.html`](./layouts/partials/head_end.html)  
-  Custom HTML at the end of `<head>`
-- [`footer_end.html`](./layouts/partials/footer_end.html)  
-  Custom HTML at the end of `<body>`
-- [`comments.html`](./layouts/partials/comments.html)  
-  Comments at the end of posts
+- [`head/head_start.html`](./layouts/partials/head_start.html) Custom HTML at
+  the start of `<head>`
+- [`head/head_end.html`](./layouts/partials/head_end.html) Custom HTML at the
+  end of `<head>`
+- [`footer_end.html`](./layouts/partials/footer_end.html) Custom HTML at the end
+  of `<body>`
+- [`comments.html`](./layouts/partials/comments.html) Comments at the end of
+  posts
 
 ### Example: Adding KaTeX Support to the Theme
 
