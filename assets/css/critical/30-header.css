@@ -26,6 +26,7 @@ header {
 
 .logo__cursor {
   opacity: 0;
+  color: var(--rosewater);
 }
 
 .logo__text {
