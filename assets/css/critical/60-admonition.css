@@ -43,7 +43,7 @@
 .admonition .admonition-title {
   font-weight: bold;
   margin: 0 -0.75rem;
-  padding: 0.25rem 1.8rem;
+  padding: 0.25rem 2.3rem;
   /* border-bottom: 1px solid; */
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -56,14 +56,13 @@
   padding: 0.5rem 0;
 }
 
-.admonition i.icon {
+.admonition .admonition-title .icon {
   font-size: 0.85rem;
   position: absolute;
-  top: 0.6rem;
   left: 0.4rem;
 }
 
-.admonition i.details-icon {
+.admonition .details-icon {
   position: absolute;
   top: 0.6rem;
   right: 0.3rem;

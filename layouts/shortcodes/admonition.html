@@ -1,9 +1,21 @@
-{{ $admonitionType := .Get "type" | default "info" }} {{ $admonitionTitle :=
-.Get "title" | .Page.RenderString | default $admonitionType | humanize}}
+{{ $admonitionType := .Get "type" | default "note" }}
+{{ $admonitionTitle :=
+  .Get "title" | .Page.RenderString | default $admonitionType | humanize
+}}
+
+{{- $iconMap := dict "note" "pencil" -}}
+{{- $iconMap := dict "info" "info-circle" | merge $iconMap -}}
+{{- $iconMap := dict "tip" "bulb" | merge $iconMap -}}
+{{- $iconMap := dict "success" "circle-check" | merge $iconMap -}}
+{{- $iconMap := dict "warning" "alert-triangle" | merge $iconMap -}}
+{{- $iconMap := dict "error" "circle-x" | merge $iconMap -}}
+{{- $iconMap := dict "example" "list-numbers" | merge $iconMap -}}
+
 
 <div class="admonition {{ $admonitionType }}">
   <div class="admonition-title">
-    <i class="icon fa-solid fapencil-alt fa-fw" aria-hidden="true"></i>{{ $admonitionTitle }}
+    {{ partial "icons/tabler-icon.html" (printf (index $iconMap $admonitionType | default (index $iconMap "note"))) }}
+    {{ $admonitionTitle }}
   </div>
   <div class="admonition-content">
     {{ .Inner | .Page.RenderString }}
