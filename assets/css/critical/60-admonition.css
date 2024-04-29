@@ -60,6 +60,7 @@
   font-size: 0.85rem;
   position: absolute;
   left: 0.4rem;
+  color: var(--color);
 }
 
 .admonition .details-icon {
