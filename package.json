@@ -1,7 +1,7 @@
 {
   "author": {
     "email": "4325029+mattstruble@users.noreply.github.com",
-    "name": "Matt Struble",
+    "name": "Michael Schnerring",
     "url": "https://struble.dev"
   },
   "bugs": {
@@ -10,6 +10,7 @@
   "comments": {
     "dependencies": {
       "@tabler/icons": "project",
+      "@tabler/icons-webfont": "project",
       "flexsearch": "project",
       "normalize.css": "project",
       "prism-themes": "project",
@@ -42,11 +43,12 @@
   },
   "dependencies": {
     "@tabler/icons": "^2.47.0",
+    "@tabler/icons-webfont": "^3.2.0",
     "flexsearch": "0.7.31",
     "normalize.css": "^8.0.1",
     "prism-themes": "^1.9.0",
     "prismjs": "^1.29.0",
-    "simple-icons": "^11.3.0",
+    "simple-icons": "^11.14.0",
     "typeface-fira-code": "^1.1.13",
     "typeface-roboto-slab": "^1.1.13"
   },

@@ -24,7 +24,7 @@ toc: true
 The `admonition` shortcode has the following named parameters:
 
 - **type** _\[optional\]_\
-  The type of the `admonition`, default value is `info`.
+  The type of the `admonition`, default value is `note`.
 - **title** _\[optional\]_\
   title of the `admonition` banner, default value is the value of the **type** parameter.
 
@@ -40,3 +40,11 @@ This was a triumph
 
 {{< admonition type=success title="This has been a great success" >}} This was a
 triumph {{< /admonition>}}
+
+## Center Quote
+
+{{< center-quote >}} Test quote {{< /center-quote >}}
+
+```markdown
+{{</* center-quote */>}} Test quote {{</* /center-quote */>}}
+```

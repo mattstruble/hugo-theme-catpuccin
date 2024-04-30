@@ -1,0 +1,43 @@
+.blockquote-center {
+  border-left: none;
+  margin: 40px 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  /* color: initial; */
+  background-color: transparent;
+  color: var(--lavender);
+}
+
+.blockquote-center::after,
+.blockquote-center::before {
+  left: 0;
+  line-height: 1;
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+}
+
+.blockquote-center::before {
+  color: var(--lavender);
+  border-top: 1px solid var(--lavender);
+  text-align: right;
+  top: -20px;
+  font-family: "Tabler Icons";
+  content: "\efbe";
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.blockquote-center::after {
+  color: var(--lavender);
+  border-bottom: 1px solid var(--lavender);
+  bottom: -20px;
+  text-align: right;
+  font-family: "Tabler Icons";
+  content: "\efbe";
+}
