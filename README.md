@@ -12,6 +12,10 @@ took a lot of inspiration from
 [Hello Friend](https://github.com/panr/hugo-theme-hello-friend) and
 [Doks](https://github.com/h-enk/doks) Hugo themes.
 
+Additional inspiration was taken from
+[hugo-fixit](https://github.com/hugo-fixit/FixIt), without which a lot of the
+shortcodes would not have worked out
+
 ## DEMO [https://hugo-theme-gruvbox.schnerring.net/](https://hugo-theme-gruvbox.schnerring.net/)
 
 ![Screenshot of the theme in dark and light colors](https://raw.githubusercontent.com/schnerring/hugo-theme-gruvbox/main/images/tn.png)
