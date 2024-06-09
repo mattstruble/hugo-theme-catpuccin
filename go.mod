@@ -1,5 +1,5 @@
 module github.com/mattstruble/hugo-theme-catpuccin
 
-go 1.22.2
+go 1.22.4
 
-require github.com/schnerring/hugo-mod-json-resume v0.0.0-20240428131816-2ca539091fff // indirect
+require github.com/schnerring/hugo-mod-json-resume v0.0.0-20240605113826-4c53610cefed // indirect
