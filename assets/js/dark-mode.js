@@ -22,6 +22,13 @@ function setTheme(theme) {
   prismDark.toggleAttribute("disabled", theme === "light");
   prismLight.toggleAttribute("disabled", theme === "dark");
 
+  // mermaid
+  document.querySelectorAll(".mermaid[data-processed]").forEach((element) => {
+    element.dataset.processed = "";
+    element.innerHTML = "";
+    element.appendChild(element.nextElementSibling.content.cloneNode(true));
+  });
+  window.initializeAndRunMermaid?.();
   // Store user preference
   localStorage.setItem("theme", theme);
 }

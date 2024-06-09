@@ -1,0 +1,11 @@
+.mermaid {
+  text-align: center;
+  background: transparent !important;
+}
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+.mermaid pre {
+  background: transparent !important;
+}

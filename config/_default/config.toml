@@ -43,6 +43,9 @@ description = "A retro-looking Hugo theme inspired by catpuccin. The pastel colo
 text = "catpuccin"
 url = "/"
 
+[params.mermaid]
+themes = ["default", "dark"]
+
 [params.prism]
 languages = ["markup", "css", "clike", "javascript", "bash", "diff", "toml"]
 plugins = [
