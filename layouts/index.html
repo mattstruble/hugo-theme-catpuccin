@@ -1,12 +1,32 @@
-{{ define "main" }}
-  <div class="content-section">
-    <h1>{{ .Title | markdownify }}</h1>
-    {{ with .Content }}
-      <div>{{ . }}</div>
-    {{ end }}
-  </div>
-  <!-- See https://gohugo.io/functions/where/#mainsections -->
-  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-  {{ $paginator := .Paginate $pages }}
-  {{ partial "post-list.html" $paginator }}
-{{ end }}
+<!doctype html>
+<html
+  lang="{{ .Site.Language.Lang | default "en" }}"
+  data-theme="{{ .Param "defaultTheme" | default "light" }}"
+>
+  {{ partial "head/head.html" . }}
+  <body>
+    <div class="layout">
+      {{ partial "header.html" . }}
+      <div class="profile">
+        {{ $cv := index $.Site.Data.json_resume $.Site.Language.Lang }}
+        {{ if $cv.basics }}
+          <aside class="bio">
+            {{ partial "json-resume/basics.html" . }}
+
+            {{ if $.Site.Params.tagCloud.enable }}
+              <hr />
+            {{ end }}
+          </aside>
+        {{ end }}
+
+        {{ if $.Site.Params.tagCloud.enable }}
+          <aside>
+            {{ partial "tag-cloud.html" . }}
+          </aside>
+        {{ end }}
+      </div>
+      <!-- {{ partial "sidebar.html" . }} -->
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+</html>
