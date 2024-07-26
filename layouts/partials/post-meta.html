@@ -1,13 +1,14 @@
 <div class="post-meta">
   {{- with .page.Date -}}
-    <span>{{ .Format "2006-01-02" }}</span>
+    <span>{{ .Format "02 Jan 2006" }}</span>
   {{- end -}}
   {{- with .page.Params.Author -}}
     <span> by </span><span class="post-meta__author">{{ . }}</span>
   {{- end -}}
   {{- with .page.ReadingTime -}}
-    <span> - </span>
-    <span class="post-meta__reading_time">{{ . }} mins reading time</span>
+    <span class="post-meta__reading_time"
+      >&nbsp;&nbsp;{{ . }} mins reading time</span
+    >
   {{- end -}}
   <!-- Don't show modified date when changed within the first 72 hours  -->
   {{- $hours := (.page.Lastmod.Sub .page.Date).Hours -}}
