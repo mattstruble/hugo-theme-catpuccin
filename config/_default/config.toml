@@ -1,6 +1,6 @@
 baseURL = "http://localhost"
 copyright = "Copyright © 2021"
-title = "hugo-theme-gruvbox"
+title = "hugo-theme-catpuccin"
 #paginate = 10
 enableRobotsTXT = true
 # Enable to calculate the last modified date from Git history and show it in the post header
@@ -37,10 +37,10 @@ unsafe = true
 #themeContrast = "medium"
 author = "Matt Struble"
 subtitle = "Theme Demo"
-description = "A retro-looking Hugo theme inspired by gruvbox. The pastel colors are high contrast, easily distinguishable, pleasing to the eye, and feature light and dark color palettes."
+description = "A retro-looking Hugo theme inspired by catpuccin. The pastel colors are high contrast, easily distinguishable, pleasing to the eye, and feature light and dark color palettes."
 
 [params.logo]
-text = "gruvbox"
+text = "catpuccin"
 url = "/"
 
 [params.prism]
