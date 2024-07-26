@@ -22,6 +22,10 @@
   font-weight: 700;
 }
 
+.post-meta__reading_time {
+  font-weight: 100;
+}
+
 .post-content {
   margin: 1.3rem 0;
 }

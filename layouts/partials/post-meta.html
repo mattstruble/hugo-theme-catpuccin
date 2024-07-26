@@ -5,6 +5,10 @@
   {{- with .page.Params.Author -}}
     <span> by </span><span class="post-meta__author">{{ . }}</span>
   {{- end -}}
+  {{- with .page.ReadingTime -}}
+    <span> - </span>
+    <span class="post-meta__reading_time">{{ . }} mins reading time</span>
+  {{- end -}}
   <!-- Don't show modified date when changed within the first 72 hours  -->
   {{- $hours := (.page.Lastmod.Sub .page.Date).Hours -}}
   {{- if and .page.Date .page.Lastmod (ge $hours 72) -}}
@@ -22,8 +26,8 @@
   {{ end }}
 
   {{ if .page.Params.cover }}
-    <!-- 
-        Only lazy-load images below-the-fold. For post lists, start loading 
+    <!--
+        Only lazy-load images below-the-fold. For post lists, start loading
         covers from the third post and onwards.
       -->
     {{ $lazy := ge .pageIndex 2 }}
