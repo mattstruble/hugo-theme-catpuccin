@@ -29,6 +29,10 @@ a {
 a.link--external::after {
   /* 2009 = Thin Space */
   /* content: "\2009↗"; */
+  font-family: "Tabler Icons";
+  content: "\ea99";
+  font-size: 0.8em;
+  vertical-align: super;
 }
 
 img,
