@@ -3,6 +3,18 @@ title: "Shortcodes"
 date: "2024-04-26"
 description: "Examples of available shortcodes"
 toc: true
+tags :
+    - "markdown"
+    - "css"
+    - "html"
+    - "ifixit-example"
+
+categories :
+    - "themes"
+    - "syntax"
+
+series:
+  - "Themes Guide"
 ---
 
 ## Admonition
@@ -52,11 +64,11 @@ triumph {{< /admonition>}}
 
 The `mermaid` shortcode supports diagrams in Hugo with the [Mermaid](https://mermaid.js.org/) library.
 
-**Mermaid** is a library to help generate diagrams and flowcharts from text, in a similar manner as Markdown. 
+**Mermaid** is a library to help generate diagrams and flowcharts from text, in a similar manner as Markdown.
 
-Just insert your mermaid code in the `mermaid` shortcode and that's it. 
+Just insert your mermaid code in the `mermaid` shortcode and that's it.
 
-### Flowchart 
+### Flowchart
 
 ```markdown
 {{< mermaid >}}
@@ -76,7 +88,7 @@ graph LR;
     C -->|Two| E[Result two]
 {{< /mermaid >}}
 
-### Sequence Diagram 
+### Sequence Diagram
 
 ```markdown
 {{< mermaid >}}
@@ -107,9 +119,9 @@ sequenceDiagram
     Bob-->John: Jolly good!
 {{< /mermaid >}}
 
-### Class Diagram 
+### Class Diagram
 
-```markdown 
+```markdown
 {{< mermaid >}}
 classDiagram
     Animal <|-- Duck
@@ -159,9 +171,9 @@ classDiagram
     }
 {{< /mermaid >}}
 
-### State Diagram 
+### State Diagram
 
-```markdown 
+```markdown
 {{< mermaid >}}
 stateDiagram-v2
     [*] --> Still
@@ -182,8 +194,8 @@ stateDiagram-v2
     Crash --> [*]
 {{< /mermaid >}}
 
-### Entity Relationship Diagram 
-```markdown 
+### Entity Relationship Diagram
+```markdown
 {{< mermaid >}}
 erDiagram
     CUSTOMER ||--o{ ORDER : places
@@ -200,9 +212,9 @@ erDiagram
 {{< /mermaid >}}
 
 
-### User Journey 
+### User Journey
 
-```markdown 
+```markdown
 {{< mermaid >}}
 journey
     title My working day
@@ -228,7 +240,7 @@ journey
       Sit down: 5: Me
 {{< /mermaid >}}
 
-### Gantt 
+### Gantt
 
 ```markdown
 {{< mermaid >}}
@@ -258,9 +270,9 @@ Future task               :        des3, after des2, 5d
 Future task2              :        des4, after des3, 5d
 {{< /mermaid >}}
 
-### Pie chart 
+### Pie chart
 
-```markdown 
+```markdown
 {{< mermaid >}}
 pie
     "Dogs" : 386
@@ -276,7 +288,7 @@ pie
     "Rats" : 15
 {{< /mermaid >}}
 
-### Requirement Diagram 
+### Requirement Diagram
 
 ```markdown
 {{< mermaid >}}
@@ -314,7 +326,7 @@ type: simulation
 test_entity - satisfies -> test_req
 {{< /mermaid >}}
 
-### Git Graph 
+### Git Graph
 
 ```markdown
 {{< mermaid >}}
