@@ -5,9 +5,7 @@ description: "Examples of available shortcodes"
 toc: true
 tags :
     - "markdown"
-    - "css"
-    - "html"
-    - "ifixit-example"
+    - "advanced-example"
 
 categories :
     - "themes"
