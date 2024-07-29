@@ -44,40 +44,46 @@ Example `admonition` input:
 
 ```markdown
 {{</* admonition type=success title="This has been a great success" */>}}
-
-This was a triumph
-
+  This was a triumph
 {{</* /admonition */>}}
 ```
 
-{{< admonition type=success title="This has been a great success" >}} This was a
-triumph {{< /admonition>}}
+{{< admonition type=success title="This has been a great success" >}}
+This was a triumph
+{{< /admonition>}}
 
 ## Center Quote
 
-{{< center-quote >}} Test quote {{< /center-quote >}}
+{{< center-quote >}}
+Test quote
+{{< /center-quote >}}
 
 ```markdown
-{{</* center-quote */>}} Test quote {{</* /center-quote */>}}
+{{</* center-quote */>}}
+Test quote
+{{</* /center-quote */>}}
 ```
+
 ## Mermaid
 
-The `mermaid` shortcode supports diagrams in Hugo with the [Mermaid](https://mermaid.js.org/) library.
+The `mermaid` shortcode supports diagrams in Hugo with the
+[Mermaid](https://mermaid.js.org/) library.
 
-**Mermaid** is a library to help generate diagrams and flowcharts from text, in a similar manner as Markdown.
+**Mermaid** is a library to help generate diagrams and flowcharts from text,
+in a similar manner as Markdown.
 
 Just insert your mermaid code in the `mermaid` shortcode and that's it.
 
 ### Flowchart
 
 ```markdown
-{{< mermaid >}}
+{{</* mermaid */>}}
 graph LR;
     A[Hard edge] -->|Link text| B(Round edge)
     B --> C{Decision}
     C -->|One| D[Result one]
     C -->|Two| E[Result two]
-{{< /mermaid >}}
+{{</* /mermaid */>}}
 ```
 
 {{< mermaid >}}
@@ -91,7 +97,7 @@ graph LR;
 ### Sequence Diagram
 
 ```markdown
-{{< mermaid >}}
+{{</* mermaid */>}}
 sequenceDiagram
     participant Alice
     participant Bob
@@ -103,8 +109,9 @@ sequenceDiagram
     John-->Alice: Great!
     John->Bob: How about you?
     Bob-->John: Jolly good!
-{{< /mermaid >}}
+{{</* /mermaid */>}}
 ```
+
 {{< mermaid >}}
 sequenceDiagram
     participant Alice
@@ -113,7 +120,7 @@ sequenceDiagram
     loop Healthcheck
         John->John: Fight against hypochondria
     end
-    Note right of John: Rational thoughts <br/>prevail...
+    Note right of John: Rational thoughts prevail...
     John-->Alice: Great!
     John->Bob: How about you?
     Bob-->John: Jolly good!
@@ -122,7 +129,7 @@ sequenceDiagram
 ### Class Diagram
 
 ```markdown
-{{< mermaid >}}
+{{</* mermaid */>}}
 classDiagram
     Animal <|-- Duck
     Animal <|-- Fish
@@ -144,7 +151,7 @@ classDiagram
         +bool is_wild
         +run()
     }
-{{< /mermaid >}}
+{{</* /mermaid */>}}
 ```
 
 {{< mermaid >}}
@@ -174,7 +181,7 @@ classDiagram
 ### State Diagram
 
 ```markdown
-{{< mermaid >}}
+{{</* mermaid */>}}
 stateDiagram-v2
     [*] --> Still
     Still --> [*]
@@ -182,8 +189,9 @@ stateDiagram-v2
     Moving --> Still
     Moving --> Crash
     Crash --> [*]
-{{< /mermaid >}}
+{{</* /mermaid */>}}
 ```
+
 {{< mermaid >}}
 stateDiagram-v2
     [*] --> Still
@@ -195,13 +203,14 @@ stateDiagram-v2
 {{< /mermaid >}}
 
 ### Entity Relationship Diagram
+
 ```markdown
-{{< mermaid >}}
+{{</* mermaid */>}}
 erDiagram
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--|{ LINE-ITEM : contains
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-{{< /mermaid >}}
+{{</* /mermaid */>}}
 ```
 
 {{< mermaid >}}
@@ -211,11 +220,10 @@ erDiagram
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 {{< /mermaid >}}
 
-
 ### User Journey
 
 ```markdown
-{{< mermaid >}}
+{{</* mermaid */>}}
 journey
     title My working day
     section Go to work
@@ -225,7 +233,7 @@ journey
     section Go home
       Go downstairs: 5: Me
       Sit down: 5: Me
-{{< /mermaid >}}
+{{</* /mermaid */>}}
 ```
 
 {{< mermaid >}}
@@ -243,7 +251,7 @@ journey
 ### Gantt
 
 ```markdown
-{{< mermaid >}}
+{{</* mermaid */>}}
 gantt
 dateFormat YYYY-MM-DD
 title Adding GANTT diagram to mermaid
@@ -254,7 +262,7 @@ Completed task            :done,   des1, 2014-01-06,2014-01-08
 Active task               :active, des2, 2014-01-09, 3d
 Future task               :        des3, after des2, 5d
 Future task2              :        des4, after des3, 5d
-{{< /mermaid >}}
+{{</* /mermaid */>}}
 ```
 
 {{< mermaid >}}
@@ -273,12 +281,12 @@ Future task2              :        des4, after des3, 5d
 ### Pie chart
 
 ```markdown
-{{< mermaid >}}
+{{</* mermaid */>}}
 pie
     "Dogs" : 386
     "Cats" : 85
     "Rats" : 15
-{{< /mermaid >}}
+{{</* /mermaid */>}}
 ```
 
 {{< mermaid >}}
@@ -291,7 +299,7 @@ pie
 ### Requirement Diagram
 
 ```markdown
-{{< mermaid >}}
+{{</* mermaid */>}}
 requirementDiagram
 
 requirement test_req {
@@ -306,7 +314,7 @@ type: simulation
 }
 
 test_entity - satisfies -> test_req
-{{< /mermaid >}}
+{{</* /mermaid */>}}
 ```
 
 {{< mermaid >}}
@@ -329,7 +337,7 @@ test_entity - satisfies -> test_req
 ### Git Graph
 
 ```markdown
-{{< mermaid >}}
+{{</* mermaid */>}}
 gitGraph
     commit
     commit
@@ -341,7 +349,7 @@ gitGraph
     merge develop
     commit
     commit
-{{< /mermaid >}}
+{{</* /mermaid */>}}
 ```
 
 {{< mermaid >}}
