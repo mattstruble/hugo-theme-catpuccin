@@ -1,6 +1,6 @@
 :root {
   --font-monospace: "Fira Code", "Lucida Console", Monaco, monospace;
-  --font-sans-serif: Verdana, Helvetica, sans-serif;
+  --font-sans-serif: "Poppins", Verdana, Helvetica, sans-serif;
   --font-serif: "Roboto Slab", Georgia, serif;
 }
 
@@ -16,6 +16,10 @@ body {
   line-height: 1.675;
   word-wrap: break-word;
   margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  font-family: var(--font-sans-serif);
 }
 
 strong {
