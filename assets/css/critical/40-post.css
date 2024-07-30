@@ -37,6 +37,10 @@
 
 .post-content {
   margin: 1.3rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  font-family: var(--font-sans-serif);
 }
 
 .post-content__read-more {

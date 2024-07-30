@@ -16,10 +16,6 @@ body {
   line-height: 1.675;
   word-wrap: break-word;
   margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left;
-  font-family: var(--font-sans-serif);
 }
 
 strong {

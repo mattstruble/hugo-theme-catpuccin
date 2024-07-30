@@ -9,13 +9,13 @@
 @import "typeface-roboto-slab";
 @import "typeface-fira-code";
 
+/* Normalize */
+@import "normalize.css/normalize.css";
+
 @font-face {
   font-family: "Tabler Icons";
   src: url("/fonts/tabler-icons.woff2");
 }
-
-/* Normalize */
-@import "normalize.css/normalize.css";
 
 /*! purgecss end ignore */
 
