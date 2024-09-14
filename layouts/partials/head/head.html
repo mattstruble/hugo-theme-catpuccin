@@ -17,6 +17,9 @@
 
   {{ partial "head/mermaid.html" . }}
 
+  {{ if or .Params.math .Site.Params.math }}
+    {{ partial "math.html" . }}
+  {{ end }}
 
   <!-- Extensibility -->
   {{ partial "head/head_end.html" . }}
