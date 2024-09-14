@@ -13,7 +13,7 @@ main {
   display: grid;
   grid-area: main;
   grid-template-areas: "empty content sidebar";
-  grid-template-columns: 1fr minmax(0, 650px) 4fr;
+  grid-template-columns: 1fr minmax(0, 1200px) 4fr;
 }
 
 header {
