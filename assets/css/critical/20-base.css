@@ -52,6 +52,7 @@ figcaption {
   color: var(--fg3);
   font-family: var(--font-serif);
   font-size: 0.9rem;
+  text-align: center;
 }
 
 *::selection {
