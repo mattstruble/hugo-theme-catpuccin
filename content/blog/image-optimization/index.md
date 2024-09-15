@@ -80,3 +80,7 @@ Images are lazily loaded by default using the `loading="lazy"` attribute on
 HTML `img` tags.
 
 {{< video src="lazy-loading" autoplay="true" controls="false" loop="true" >}}
+
+## Animated Gif support
+
+![Kid giving thumbs up at computer.](ok-all.gif)
