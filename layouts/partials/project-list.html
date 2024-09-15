@@ -1,0 +1,29 @@
+<section class="grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+{{ range $pageIndex, $page := .Pages }}
+  <a class="grid-item" href="{{ $page.RelPermalink }}">
+  <article class="project">
+    {{ if $page.Params.cover }}
+        {{ $lazy := ge $pageIndex 2 }}
+        {{ partial "image.html" (dict "src" $page.Params.cover.src "alt" $page.Params.cover.alt "page" $page "lazy" $lazy) }}
+    {{ end }}
+
+    <div class="project-content">
+      <h2 class="title">{{ .Title | markdownify }}</h2>
+      {{- with $page.Date -}}
+        <p class="date">{{ .Format "02 Jan 2006" }}</p>
+      {{- end -}}
+
+      {{ with .Description }}
+        {{ . | emojify }}
+      {{ else }}
+        {{ .Summary | emojify | strings.Truncate 200 }}
+      {{ end }}
+    </div>
+  </article>
+  </a>
+{{ end }}
+</section>
+
+{{ partial "pagination.html" . }}

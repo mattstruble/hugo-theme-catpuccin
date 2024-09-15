@@ -15,6 +15,7 @@
 {{ $bundle := slice $prism | resources.Concat "js/main.js" | js.Build $jsBuildOptions }}
 {{ $flexsearch := resources.Get "js/flexsearch.js" | resources.ExecuteAsTemplate "js/flexsearch.js" . | js.Build $jsBuildOptions }}
 {{ $mermaid := resources.Get "js/mermaid.js" | resources.ExecuteAsTemplate "js/mermaid.js" . | js.Build $jsBuildOptions }}
+{{ $masonry := resources.Get "js/masonry.js" | resources.ExecuteAsTemplate "js/masonry.js" . | js.Build $jsBuildOptions }}
 
 {{ if hugo.IsProduction }}
   {{ $bundle = $bundle | fingerprint "sha512" }}
@@ -25,6 +26,8 @@
 <script src="{{ $bundle.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $bundle.Data.Integrity }}"{{ end }}></script>
 <script src="{{ $flexsearch.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $flexsearch.Data.Integrity }}"{{ end }}></script>
 <script src="{{ $mermaid.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $mermaid.Data.Integrity }}"{{ end }}></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="{{ $masonry.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $masonry.Data.Integrity }}"{{ end }}></script>
 {{/* prettier-ignore-end */}}
 
 
