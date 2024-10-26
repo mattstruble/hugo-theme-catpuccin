@@ -5,7 +5,7 @@ comments: false
 socialShare: true
 toc: true
 cover:
-  src: ./alexandre-van-thuan-mr9FouttLGY-unsplash.jpg
+  src: alexandre-van-thuan-mr9FouttLGY-unsplash.jpg
   alt: The interior of Stadsbiblioteket in Stockholm - Gunnar Asplunds library from 1928. The architecture is a transition between neoclassicism and functionalism.
   caption: By [Alexandre Van Thuan](https://unsplash.com/photos/mr9FouttLGY)
 ---
