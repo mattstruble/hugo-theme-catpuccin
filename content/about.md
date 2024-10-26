@@ -1,6 +1,7 @@
 ---
 title: "About"
 draft: false
+exclude_meta: true
 ---
 
 ## Attributions
