@@ -13,6 +13,10 @@
     flex-flow: row wrap;
   }
 
+  .jr-work__name {
+    flex-basis: 70%;
+  }
+
   .jr__date,
   .jr__date-range,
   .jr-work__location {

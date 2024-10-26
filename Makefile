@@ -8,6 +8,11 @@ install:
 serve: install
 	hugo server
 
+.PHONY: update
+update:
+	hugo mod get -u
+	hugo mod tidy
+
 .PHONY: clean
 clean:
 	hugo mod clean --all
