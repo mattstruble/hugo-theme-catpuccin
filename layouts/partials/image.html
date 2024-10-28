@@ -38,7 +38,6 @@
     <!-- No processing for gifs -->
     <img src="{{ $image.RelPermalink }}" alt="{{ .alt }}" />
   {{ else }}
-    <!-- {{ $image := $image.Filter (images.AutoOrient) }} -->
     <!-- Calculate resize widths in increments of 100px -->
     {{ $minWidth := .page.Site.Params.imageResize.min | default 300 }}
     {{ $maxWidth := .page.Site.Params.imageResize.max | default 700 }}
