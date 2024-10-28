@@ -6,6 +6,11 @@ enableRobotsTXT = true
 # Enable to calculate the last modified date from Git history and show it in the post header
 #enableGitInfo = true
 
+[author]
+name = "Matt Struble"
+github = "@mattstruble"
+location = "Boston, MA"
+
 [build]
 noJSConfigInAssets = true
 [build.buildStats]
@@ -155,3 +160,22 @@ languageName = "Deutsch"
 weight = 20
 [languages.de.params.jsonResume]
 present = "heute"
+
+[outputs]
+home = ["HTML", "htaccess", "humanstxt"]
+
+# https://discourse.gohugo.io/t/htaccess-humans-txt-with-template-logic/27624
+[outputFormats]
+[outputFormats.htaccess]
+baseName = ""
+isPlainText = true
+mediaType = "text/htaccess"
+
+[outputFormats.humanstxt]
+baseName = "humans"
+isPlainText = true
+mediaType = "text/plain"
+
+[mediaTypes]
+[mediaTypes."text/htaccess"]
+suffixes = ["htaccess"]

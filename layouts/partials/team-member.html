@@ -1,0 +1,5 @@
+<!-- https://discourse.gohugo.io/t/htaccess-humans-txt-with-template-logic/27624/4 -->
+Author: {{ $.member.name | default "-" }}
+Contact: {{ $.member.email | default "-" }}
+GitHub: {{ $.member.github | default "-" }}
+From: {{ $.member.location | default "-" }}
