@@ -2,7 +2,7 @@
   <div class="grid-sizer"></div>
   <div class="gutter-sizer"></div>
 {{ range $pageIndex, $page := .Pages }}
-  <a class="grid-item" href="{{ $page.params.external_url | default $page.RelPermalink }}">
+  <a class="grid-item" href="{{ $page.Params.external_url | default $page.RelPermalink }}">
   <article class="project">
     {{ if $page.Params.cover }}
         {{ $lazy := ge $pageIndex 2 }}
