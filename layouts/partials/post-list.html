@@ -2,7 +2,7 @@
   <article class="post">
     <div class="post-header">
       <h2>
-        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+          <a href="{{ $page.Params.external_url | default .RelPermalink  }}">{{ .Title | markdownify }}</a>
       </h2>
       {{ partial "post-meta.html" (dict "page" . "pageIndex" $pageIndex) }}
     </div>
