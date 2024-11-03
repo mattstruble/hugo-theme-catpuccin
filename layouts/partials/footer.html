@@ -22,13 +22,21 @@
   {{ $flexsearch = $flexsearch | fingerprint "sha512" }}
 {{ end }}
 
+
+
 {{/* prettier-ignore-start */}}
 <script src="{{ $bundle.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $bundle.Data.Integrity }}"{{ end }}></script>
 <script src="{{ $flexsearch.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $flexsearch.Data.Integrity }}"{{ end }}></script>
+{{/* prettier-ignore-end */}}
+
+{{- if .Store.Get "hasMermaid" -}}
 <script src="{{ $mermaid.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $mermaid.Data.Integrity }}"{{ end }}></script>
+{{- end -}}
+
+{{- if .Store.Get "hasMasonry" -}}
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="{{ $masonry.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $masonry.Data.Integrity }}"{{ end }}></script>
-{{/* prettier-ignore-end */}}
+{{- end -}}
 
 
 <!-- Extensibility -->
