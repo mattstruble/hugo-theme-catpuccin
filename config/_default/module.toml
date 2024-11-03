@@ -45,8 +45,3 @@ target = "assets/tabler-icons"
 [[mounts]]
 source = "node_modules/@tabler/icons-webfont/dist/fonts/"
 target = "static/fonts"
-[[mounts]]
-# Add hugo_stats.json to Hugo's server watcher
-# See https://gohugo.io/getting-started/configuration/#configure-cache-busters
-source = "hugo_stats.json"
-target = "assets/watching/hugo_stats.json"
