@@ -48,14 +48,14 @@
     "normalize.css": "^8.0.1",
     "prism-themes": "^1.9.0",
     "prismjs": "^1.29.0",
-    "simple-icons": "^13.15.0",
+    "simple-icons": "^13.16.0",
     "typeface-fira-code": "^1.1.13",
     "typeface-roboto-slab": "^1.1.13"
   },
   "description": "A retro-looking Hugo theme inspired by catpuccin. The pastel colors are high contrast, easily distinguishable, pleasing to the eye, and feature light and dark color palettes.",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
-    "cssnano": "^7.0.3",
+    "cssnano": "^7.0.6",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
