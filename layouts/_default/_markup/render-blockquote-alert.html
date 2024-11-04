@@ -1,0 +1,1 @@
+{{- partial "admonition.html" (dict "Type" .AlertType "Title" (.AlertTitle | default (strings.FirstUpper .AlertType)) "Text" .Text) -}}

@@ -1,14 +1,14 @@
 {{/* https://discourse.gohugo.io/t/htaccess-humans-txt-with-template-logic/27624/4 */}}
 
-{{ with site.Author }}
-    {{- $author_type := (printf "%T" site.Author) }}
+{{ with site.Params.Author }}
+    {{- $author_type := (printf "%T" site.Params.Author) }}
     {{- if (or (eq $author_type "map[string]string") (eq $author_type "map[string]interface {}")) }}
 /* TEAM */
-        {{ range $i, $member := site.Author }}
+        {{ range $i, $member := site.Params.Author }}
             {{- if (eq (printf "%T" $member) "maps.Params") }}
                 {{- partial "team-member.html" (dict "context" . "member" $member) -}}
             {{- else if (eq (printf "%T" $member) "string") }}
-                {{- partial "team-member.html" (dict "context" . "member" site.Author) -}}
+                {{- partial "team-member.html" (dict "context" . "member" site.Params.Author) -}}
                 {{- break -}}
             {{- end }}
         {{- end }}

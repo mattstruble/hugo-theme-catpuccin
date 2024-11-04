@@ -1,0 +1,6 @@
+{{/* https://gohugo.io/render-hooks/code-blocks/#examples */}}
+<pre class="mermaid">
+  {{- .Inner | safeHTML }}
+</pre>
+<template>{{- .Inner | safeHTML }}</template>
+{{ .Page.Store.Set "hasMermaid" true }}

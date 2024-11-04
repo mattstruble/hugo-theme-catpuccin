@@ -25,10 +25,15 @@ This article offers a sample of basic Markdown syntax that can be used in Hugo c
 The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
+
 ###### H6
 
 ## Paragraph
@@ -99,6 +104,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
     </html>
 
 #### Code block with Hugo's internal highlight shortcode
+
 {{< highlight html >}}
 <!doctype html>
 <html lang="en">
@@ -147,3 +153,36 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+## Alerts
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!INFO]
+> Useful information.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!SUCCESS]
+> A success banner.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!ERROR]+ an error
+> Advises about risks or negative outcomes of certain actions.
+
+> [!EXAMPLE]
+> An example on how to do something
+
+## In-line mermaid
+
+```mermaid
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
