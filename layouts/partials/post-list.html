@@ -2,7 +2,11 @@
   <article class="post">
     <div class="post-header">
       <h2>
-          <a href="{{ $page.Params.external_url | default .RelPermalink  }}">{{ .Title | markdownify }}</a>
+          {{ if $page.Params.external_url }}
+          <a href="{{ $page.Params.external_url }}" class="link--external" target="_blank" rel="noreferrer">{{ .Title | markdownify }}</a>
+          {{ else }}
+          <a href="{{  default .RelPermalink  }}">{{ .Title | markdownify }}</a>
+          {{ end }}
       </h2>
       {{ partial "post-meta.html" (dict "page" . "pageIndex" $pageIndex) }}
     </div>
