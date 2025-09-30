@@ -1,2 +1,6 @@
 {{ $path := lower . }}
-{{ (resources.Get $path).Content | safeHTML }}
+{{ with resources.Get $path }}
+  {{ .Content | safeHTML }}
+{{ else }}
+  {{ warnf "Icon asset not found: %s" $path }}
+{{ end }}
